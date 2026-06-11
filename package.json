@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --verbose --reporters=default",
     "format": "biome check --write .",
-    "prepare": "husky"
+    "create-problem": "ts-node scripts/create-problem.ts"
   },
   "repository": {
     "type": "git",
