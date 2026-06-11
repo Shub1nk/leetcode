@@ -1,6 +1,8 @@
-# Название
+# Номер и Название
 
-[LeetCode](https://leetcode.com/problems/.../)
+**Сложность:** Easy
+
+**Ссылка:** https://leetcode.com/problems/.../
 
 ## Условие
 

@@ -16,7 +16,7 @@ leetcode/
 │       ├── index.test.ts
 │       └── README.md
 ├── shared/          # Reusable helpers
-│   └── {category}-{name}/
+│   └── {name}/
 │       ├── index.ts
 │       ├── index.test.ts
 │       └── README.md
@@ -35,6 +35,7 @@ npm run format  # Format code (Biome)
 
 | # | Title | Difficulty | Status |
 |---|-------|------------|--------|
+| 1 | Two Sum | Easy | ✅ |
 | 9 | Palindrome Number | Easy | ✅ |
 
 ## Commits
