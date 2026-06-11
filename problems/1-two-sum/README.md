@@ -1,6 +1,8 @@
 # 1. Две суммы
 
-[LeetCode](https://leetcode.com/problems/two-sum/)
+**Сложность:** Easy
+
+**Ссылка:** https://leetcode.com/problems/two-sum/
 
 ## Условие
 
