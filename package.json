@@ -4,8 +4,9 @@
   "description": "Resolving leetcode",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "format": "biome check --write ."
+    "test": "jest --verbose --reporters=default",
+    "format": "biome check --write .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,10 @@
   "homepage": "https://github.com/Shub1nk/leetcode#readme",
   "devDependencies": {
     "@biomejs/biome": "^2.4.16",
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
     "@types/jest": "^30.0.0",
+    "husky": "^9.1.7",
     "jest": "^30.4.2",
     "nodemon": "^3.1.14",
     "ts-jest": "^29.4.11",

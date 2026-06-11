@@ -9,17 +9,26 @@ Collection of LeetCode problem solutions in TypeScript.
 ## Structure
 
 ```
-{problem-number}-{problem-name}/
-├── index.ts        # Solution code
-├── index.test.ts   # Unit tests
-└── README.md       # Problem description & notes
+leetcode/
+├── problems/        # LeetCode problems
+│   └── {number}-{name}/
+│       ├── index.ts
+│       ├── index.test.ts
+│       └── README.md
+├── shared/          # Reusable helpers
+│   └── {category}-{name}/
+│       ├── index.ts
+│       ├── index.test.ts
+│       └── README.md
+└── templates/       # Templates
 ```
 
-## Run Tests
+## Commands
 
 ```bash
-npm install
-npm test
+npm install   # Install dependencies
+npm test      # Run tests (verbose)
+npm run format  # Format code (Biome)
 ```
 
 ## Problems
@@ -27,3 +36,15 @@ npm test
 | # | Title | Difficulty | Status |
 |---|-------|------------|--------|
 | 9 | Palindrome Number | Easy | ✅ |
+
+## Commits
+
+Conventional Commits format:
+
+```bash
+git commit -m "problem: add 9-palindrome-number"
+git commit -m "shared: add math-reverse-integer"
+git commit -m "docs: update algorithm-template"
+```
+
+Types: `problem`, `shared`, `docs`, `fix`, `refactor`, `chore`
