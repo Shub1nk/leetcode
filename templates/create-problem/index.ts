@@ -1,3 +1,1 @@
-export const functionName = () => {
-
-};
+export const functionName = () => {};

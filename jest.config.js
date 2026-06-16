@@ -9,5 +9,5 @@ module.exports = {
     ...tsJestTransformCfg,
   },
   verbose: true,
-  testPathIgnorePatterns: ['/templates/', '/node_modules/'],
+  testPathIgnorePatterns: ["/templates/", "/node_modules/"],
 };

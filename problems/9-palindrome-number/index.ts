@@ -1,4 +1,4 @@
-import { mathReverseInteger } from '../../shared'
+import { mathReverseInteger } from "../../shared";
 
 export const isPalindrome = (num: number): boolean => {
   if (num < 0) return false;
