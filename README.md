@@ -2,10 +2,6 @@
 
 Collection of LeetCode problem solutions in TypeScript.
 
-## Progress
-
-[Google Sheets](https://docs.google.com/spreadsheets/d/1DWpRcfu5fGGV8hOHXEo8lXdsN4xVxFdjfmLlYzimP2U/edit?gid=1529208291#gid=1529208291) - tracking solved problems
-
 ## Structure
 
 ```
@@ -30,13 +26,6 @@ npm install   # Install dependencies
 npm test      # Run tests (verbose)
 npm run format  # Format code (Biome)
 ```
-
-## Problems
-
-| # | Title | Difficulty | Status |
-|---|-------|------------|--------|
-| 1 | Two Sum | Easy | ✅ |
-| 9 | Palindrome Number | Easy | ✅ |
 
 ## Commits
 
