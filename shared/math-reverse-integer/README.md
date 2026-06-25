@@ -80,3 +80,8 @@ mathReverseInteger(0)     // 0
 ```typescript
 import { mathReverseInteger } from "./shared/math-reverse-number";
 ```
+
+## Где используется
+
+- [7. Reverse Integer](../../problems/7-reverse-integer/) — разворот с проверкой диапазона Int32
+- [9. Число-палиндром](../../problems/9-palindrome-number/) — сравнение числа с его разворотом

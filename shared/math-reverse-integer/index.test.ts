@@ -1,4 +1,4 @@
-import { mathReverseInteger } from "./index";
+import { mathReverseInteger } from ".";
 
 describe("mathReverseInteger", () => {
   it("Разворот положительного числа: 123", () => {
