@@ -50,7 +50,7 @@ F(n) = F(n-1) + F(n-2),  n ≥ 2
 Храним два соседних числа последовательности: `a` (текущее) и `b` (следующее). В бесконечном цикле выдаём `a` через `yield`, затем сдвигаем «окно»: следующее число `a + b` становится новым `b`, а прежнее `b` — новым `a`.
 
 ```typescript
-export function* generateFibonacciSequence(): Generator<number, any, number> {
+export function* generateFibonacciSequence(): Generator<number, void, number> {
   let a = 0; // F(0)
   let b = 1; // F(1)
   while (true) {

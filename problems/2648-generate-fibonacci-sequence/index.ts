@@ -1,4 +1,4 @@
-export function* generateFibonacciSequence(): Generator<number, any, number> {
+export function* generateFibonacciSequence(): Generator<number, void, number> {
   let a = 0;
   let b = 1;
   while (true) {
