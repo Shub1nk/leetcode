@@ -1,5 +1,5 @@
 import { minimumTimeToCompleteTrips } from ".";
-import { bigTimes } from './big-mock'
+import { bigTimes } from "./big-mock";
 
 describe("minimumTimeToCompleteTrips", () => {
   it("Должен вернуть минимальное время для вычисления путешествия", () => {
@@ -8,5 +8,5 @@ describe("minimumTimeToCompleteTrips", () => {
   });
   it("Должен вернуть минимальное время для большого набора данных с бинарным поиском", () => {
     expect(minimumTimeToCompleteTrips(bigTimes, 9765277)).toEqual(34766088);
-  })
+  });
 });

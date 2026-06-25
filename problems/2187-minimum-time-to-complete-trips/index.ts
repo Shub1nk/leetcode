@@ -1,6 +1,6 @@
 const getSumTrips = (trips: number[]) => trips.reduce((a, b) => a + b);
 
-const getMid = (left: number, right: number) => left + Math.floor((right-left)/2);
+const getMid = (left: number, right: number) => left + Math.floor((right - left) / 2);
 
 export const minimumTimeToCompleteTrips = (time: number[], totalTrips: number): number => {
   let left = Math.min(...time);
@@ -25,4 +25,3 @@ export const minimumTimeToCompleteTrips = (time: number[], totalTrips: number): 
 
   return left;
 };
-
