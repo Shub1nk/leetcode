@@ -22,10 +22,18 @@ leetcode/
 ## Commands
 
 ```bash
-npm install   # Install dependencies
-npm test      # Run tests (verbose)
-npm run format  # Format code (Biome)
+npm install            # Install dependencies
+npm test               # Run tests (verbose)
+npm run format         # Format code (Biome)
+npm run create-problem # Scaffold a new problem from the template
 ```
+
+## Git hooks
+
+Husky-хуки настраиваются автоматически при `npm install`:
+
+- `pre-commit` — гоняет `npm test`, коммит не пройдёт при падающих тестах
+- `commit-msg` — проверяет сообщение через commitlint (Conventional Commits)
 
 ## Commits
 
