@@ -1,4 +1,4 @@
-import { isPalindrome } from "./index";
+import { isPalindrome } from ".";
 
 describe("9. Число-палиндром", () => {
   it("положительный палиндром: 121", () => {
