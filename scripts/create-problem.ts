@@ -36,7 +36,9 @@ const main = async () => {
     process.exit(1);
   }
 
-  const folderName = `${number}-${toKebabCase(name)}`;
+  const slug = toKebabCase(name);
+  const today = new Date().toISOString().slice(0, 10);
+  const folderName = `${number}-${slug}`;
   const projectRoot = path.join(__dirname, "..");
   const destPath = path.join(projectRoot, "problems", folderName);
   const templatePath = path.join(projectRoot, "templates", "create-problem");
@@ -51,14 +53,21 @@ const main = async () => {
   const readme = fs.readFileSync(path.join(templatePath, "README.md"), "utf8");
   const indexTs = fs.readFileSync(path.join(templatePath, "index.ts"), "utf8");
   const testTs = fs.readFileSync(path.join(templatePath, "index.test.ts"), "utf8");
+  const metaTs = fs.readFileSync(path.join(templatePath, "meta.ts"), "utf8");
 
   const processTemplate = (content: string) => {
-    return content.replace(/functionName/g, functionName).replace(/Название/g, name);
+    return content
+      .replace(/functionName/g, functionName)
+      .replace(/Название/g, name)
+      .replace(/__ID__/g, number)
+      .replace(/__SLUG__/g, slug)
+      .replace(/__DATE__/g, today);
   };
 
   fs.writeFileSync(path.join(destPath, "README.md"), processTemplate(readme));
   fs.writeFileSync(path.join(destPath, "index.ts"), processTemplate(indexTs));
   fs.writeFileSync(path.join(destPath, "index.test.ts"), processTemplate(testTs));
+  fs.writeFileSync(path.join(destPath, "meta.ts"), processTemplate(metaTs));
 
   console.log(`Создано: problems/${folderName}/`);
 };
