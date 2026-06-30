@@ -2,7 +2,6 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "Resolving leetcode",
-  "main": "index.js",
   "scripts": {
     "test": "jest --verbose --reporters=default",
     "format": "biome check --write .",
