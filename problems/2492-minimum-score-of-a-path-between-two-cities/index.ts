@@ -1,8 +1,10 @@
+import { Stack } from "../../shared";
+
 import type { ILinkedCities, TRoad } from "./models";
 
 export function minimumScoreOfAPathBetweenTwoCities(n: number, roads: Array<TRoad>): number {
   const visited = new Set<number>();
-  const stack: number[] = [];
+  const stack = new Stack<number>();
 
   let minRoad = Infinity;
 
@@ -27,8 +29,8 @@ export function minimumScoreOfAPathBetweenTwoCities(n: number, roads: Array<TRoa
   // DFS на явном стеке: обходим компоненту, достижимую от города 1.
   stack.push(startNodeId);
 
-  while (stack.length !== 0) {
-    const currentNodeId = stack.pop() as number;
+  while (!stack.isEmpty()) {
+    const currentNodeId = stack.pop();
 
     // Ноду могли положить в стек несколько раз — обрабатываем только первый.
     if (visited.has(currentNodeId)) continue;
