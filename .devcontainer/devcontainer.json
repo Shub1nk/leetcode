@@ -5,7 +5,13 @@
   },
   "runArgs": ["--name", "leetcode"],
   "workspaceFolder": "/workspaces/leetcode",
-  "mounts": ["source=leetcode-node-modules,target=/workspaces/leetcode/node_modules,type=volume"],
+  "mounts": [
+    "source=leetcode-node-modules,target=/workspaces/leetcode/node_modules,type=volume",
+    "source=/run/host-services/ssh-auth.sock,target=/ssh-agent,type=bind"
+  ],
+  "containerEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  },
   "customizations": {
     "vscode": {
       "extensions": ["biomejs.biome", "eamodio.gitlens"],
