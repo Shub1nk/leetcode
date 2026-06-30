@@ -14,4 +14,3 @@ ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
 
 WORKDIR /workspaces/leetcode
-RUN mkdir -p /workspaces/leetcode/node_modules && chown -R node:node /workspaces/leetcode
