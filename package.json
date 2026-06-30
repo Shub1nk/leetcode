@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --verbose --reporters=default",
     "format": "biome check --write .",
-    "create-problem": "ts-node scripts/create-problem.ts"
+    "create-problem": "ts-node scripts/create-problem.ts",
+    "build-meta": "ts-node scripts/build-meta-index.ts"
   },
   "repository": {
     "type": "git",
