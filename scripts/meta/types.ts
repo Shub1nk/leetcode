@@ -22,7 +22,7 @@ export type Technique =
   | "generator";
 
 /** Структуры данных, задействованные в решении. */
-export type DataStructure = "array" | "map" | "stack" | "graph";
+export type DataStructure = "array" | "map" | "stack" | "graph" | "linked-list";
 
 /** Утилиты из `shared/`, которые решение реально импортит. */
 export type SharedUtil = "stack" | "is-int32" | "math-reverse-integer";
