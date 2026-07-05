@@ -19,10 +19,18 @@ export type Technique =
   | "dfs"
   | "adjacency-list"
   | "connected-components"
-  | "generator";
+  | "generator"
+  | "recursion";
 
 /** Структуры данных, задействованные в решении. */
-export type DataStructure = "array" | "map" | "stack" | "graph" | "linked-list";
+export type DataStructure =
+  | "array"
+  | "map"
+  | "stack"
+  | "graph"
+  | "linked-list"
+  | "tree"
+  | "binary-search-tree";
 
 /** Утилиты из `shared/`, которые решение реально импортит. */
 export type SharedUtil = "stack" | "is-int32" | "math-reverse-integer";
