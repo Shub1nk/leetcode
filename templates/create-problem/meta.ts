@@ -6,7 +6,7 @@ export const meta: ProblemMeta = {
   title: "Название",
   difficulty: "easy",
   url: "https://leetcode.com/problems/__SLUG__/",
-  status: "solved",
+  status: "todo",
   solvedAt: "__DATE__",
   topics: [],
   techniques: [],
