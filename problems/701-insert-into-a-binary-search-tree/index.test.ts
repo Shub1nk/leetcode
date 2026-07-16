@@ -1,5 +1,5 @@
+import { buildTree, treeToArray } from "../../lib";
 import { insertIntoBST } from ".";
-import { buildTree, treeToArray } from "./lib";
 
 // Правильно вставляет значение в BST с учетом преобразований с LeetCode
 describe("insertIntoBST", () => {

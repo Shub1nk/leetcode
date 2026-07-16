@@ -28,7 +28,7 @@ const toCamelCase = (str: string): string => {
 
 const main = async () => {
   const number = await askQuestion("Номер задачи: ");
-  const name = await askQuestion("Название (например two-sum): ");
+  const name = await askQuestion("Название (например Maximum Depth of Binary Tree): ");
   const functionName = toCamelCase(toKebabCase(name));
 
   if (!number || !name) {

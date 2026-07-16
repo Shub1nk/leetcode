@@ -1,4 +1,4 @@
-import { TreeNode } from "./lib";
+import { TreeNode } from "../../lib";
 
 const LEFT = "left";
 const RIGHT = "right";
