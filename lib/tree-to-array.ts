@@ -1,4 +1,4 @@
-import { TreeNode } from ".";
+import type { TreeNode } from ".";
 
 export const treeToArray = (root: TreeNode | null): (number | null)[] => {
   if (root === null) return [];

@@ -1,4 +1,4 @@
-import { TreeNode } from "../../lib";
+import type { TreeNode } from "../../lib";
 
 export const maximumDepthOfBinaryTree = (root: TreeNode | null): number => {
   if (root === null) return 0;
