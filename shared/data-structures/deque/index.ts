@@ -1,9 +1,11 @@
 export class Deque<T> {
-  private buffer: Array<T | undefined> = [];
+  private buffer: Array<T | undefined>;
   private head: number = 0;
   private _size: number = 0;
 
-  constructor(private capacity = 8) {}
+  constructor(private capacity = 8) {
+    this.buffer = new Array(capacity);
+  }
 
   pushFront(el: T) {
     if (this.isFull()) {
