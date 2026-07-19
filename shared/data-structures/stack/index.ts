@@ -29,7 +29,7 @@ export class Stack<T> {
 
   peek() {
     this.assertNotEmpty();
-    return this.deque.peekBack();
+    return this.deque.peekBack()!;
   }
 
   get size() {
