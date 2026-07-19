@@ -1,3 +1,5 @@
+import { Deque } from "../deque";
+
 export const STACK_ERROR_EMPTY = "Stack is empty";
 
 class StackUnderflowError extends Error {
@@ -8,7 +10,7 @@ class StackUnderflowError extends Error {
 }
 
 export class Stack<T> {
-  private stack: T[] = [];
+  private deque = new Deque<T>();
 
   private assertNotEmpty() {
     if (this.isEmpty()) {
@@ -17,21 +19,21 @@ export class Stack<T> {
   }
 
   push(item: T) {
-    this.stack.push(item);
+    this.deque.pushBack(item);
   }
 
   pop() {
     this.assertNotEmpty();
-    return this.stack.pop()!;
+    return this.deque.popBack()!;
   }
 
   peek() {
     this.assertNotEmpty();
-    return this.stack[this.size - 1];
+    return this.deque.peekBack();
   }
 
   get size() {
-    return this.stack.length;
+    return this.deque.size;
   }
 
   isEmpty() {
