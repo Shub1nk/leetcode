@@ -17,6 +17,7 @@ export type Technique =
   | "greedy"
   | "binary-search"
   | "dfs"
+  | "backtracking"
   | "adjacency-list"
   | "connected-components"
   | "generator"
