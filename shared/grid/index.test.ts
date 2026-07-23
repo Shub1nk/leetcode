@@ -6,22 +6,13 @@ describe("Grid2D", () => {
 
     expect(grid.get(0, 0)).toBe(0);
     expect(grid.get(2, 3)).toBe(0);
-    expect(grid.has(1, 2, 1)).toBe(false);
-    expect(grid.has(1, 2, 0)).toBe(true);
-  });
-
-  it("set → get (флаг по умолчанию)", () => {
-    const grid = new Grid2D(3, 4);
-    grid.set(1, 2, 1);
-    expect(grid.get(1, 2)).toBe(1);
-    expect(grid.has(1, 2, 1)).toBe(true);
+    expect(grid.get(1, 2)).toBe(0);
   });
 
   it("Явное значение (не только 0/1)", () => {
     const grid = new Grid2D(1, 1);
     grid.set(0, 0, 5);
     expect(grid.get(0, 0)).toBe(5);
-    expect(grid.has(0, 0, 1)).toBe(false);
   });
 
   it("Перезапись", () => {
@@ -29,8 +20,7 @@ describe("Grid2D", () => {
     grid.set(0, 0, 1);
     expect(grid.get(0, 0)).toBe(1);
     grid.set(0, 0, 0);
-    expect(grid.has(0, 0, 1)).toBe(false);
-    expect(grid.has(0, 0, 0)).toBe(true);
+    expect(grid.get(0, 0)).toBe(0);
   });
 
   it("Прямоугольная сетка — не путаем rows и cols", () => {
@@ -43,7 +33,10 @@ describe("Grid2D", () => {
     expect(grid.get(1, 2)).toBe(1);
   });
 
-  //TODO: тут бы подробнее описать не понял в чем соль
+  // Соль: на сетке 2x2 (cols=2) столбец 2 — вне границ. Без гарда inBounds
+  // индекс был бы 0*2 + 2 = 2, но это ровно индекс клетки (1,0): 1*2 + 0 = 2.
+  // То есть запись «утекла» бы в чужую клетку. Гард делает set(0,2) no-op,
+  // поэтому (1,0) остаётся 0 — этот тест ловит именно потерю встроенных границ.
   it("Нет коллизии при переполнении столбца", () => {
     const grid = new Grid2D(2, 2);
     grid.set(0, 2, 1);
@@ -52,10 +45,11 @@ describe("Grid2D", () => {
 
   it("Чтение за краем → 0, без исключений", () => {
     const grid = new Grid2D(3, 3);
-    expect(grid.get(-1, 0)).toBe(0);
-    expect(grid.get(0, 3)).toBe(0);
-    expect(grid.get(100, 100)).toBe(0);
-    expect(grid.has(-1, 0, 1)).toBe(false);
+    expect(grid.get(-1, 0)).toBe(0); // строка < 0
+    expect(grid.get(0, -1)).toBe(0); // столбец < 0
+    expect(grid.get(3, 0)).toBe(0); // строка = rows (за нижним краем)
+    expect(grid.get(0, 3)).toBe(0); // столбец = cols (за правым краем)
+    expect(grid.get(100, 100)).toBe(0); // далеко за краем
   });
 
   it("Запись за краем ничего не портит", () => {

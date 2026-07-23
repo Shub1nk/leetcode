@@ -11,5 +11,5 @@ export const meta: ProblemMeta = {
   topics: ["array", "depth-first-search", "breadth-first-search", "union-find", "matrix"],
   techniques: ["dfs", "connected-components"],
   dataStructures: ["array", "stack", "graph"],
-  usesShared: ["stack"],
+  usesShared: ["stack", "grid"],
 };
