@@ -1,18 +1,3 @@
-export interface ICell {
-  r: number;
-  c: number;
-}
-
-// biome-ignore format: матрица направлений— держим крестом для наглядности
-export const DIRS_4 = [
-           [-1, 0],
-  [0, -1], /**X**/  [0, 1],
-           [1, 0],
-] as const;
-
-// biome-ignore format: матрица направлений — держим 3x3 для наглядности
-export const DIRS_8 = [
-  [-1, -1], [-1, 0], [-1, 1],
-  [ 0, -1], /**X**/  [ 0, 1],
-  [ 1, -1], [ 1, 0], [ 1, 1],
-] as const;
+export { DIRS_4, DIRS_8 } from "./constants";
+export { Grid2D } from "./grid";
+export type { ICell } from "./models";
