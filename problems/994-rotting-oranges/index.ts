@@ -1,17 +1,4 @@
-import { Queue } from "../../shared";
-
-interface IGridCell {
-  r: number;
-  c: number;
-}
-
-// TODO: уже 2 раз попадается, надо в shared/constants выносить
-const DIRS = [
-  [-1, 0], // вверх
-  [1, 0], // вниз
-  [0, -1], // влево
-  [0, 1], // вправо
-] as const;
+import { DIRS_4, type ICell, Queue } from "../../shared";
 
 const isFresh = (value?: number) => value === 1;
 const isRotten = (value?: number) => value === 2;
@@ -20,7 +7,7 @@ export const rottingOranges = (grid: number[][]): number => {
   let fresh = 0;
   let tick = 0;
 
-  const queue = new Queue<IGridCell>();
+  const queue = new Queue<ICell>();
 
   // шаг инициализации
   for (const [r, row] of grid.entries()) {
@@ -51,7 +38,7 @@ export const rottingOranges = (grid: number[][]): number => {
     for (let i = 0; i < levelSize; i++) {
       const currentCell = queue.dequeue();
 
-      for (const [dr, dc] of DIRS) {
+      for (const [dr, dc] of DIRS_4) {
         const nr = currentCell.r + dr;
         const nc = currentCell.c + dc;
 

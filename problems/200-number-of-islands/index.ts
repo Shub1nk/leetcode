@@ -1,16 +1,4 @@
-import { Stack } from "../../shared";
-
-interface ICoord {
-  r: number;
-  c: number;
-}
-
-const DIRS = [
-  [-1, 0], // вверх
-  [1, 0], // вниз
-  [0, -1], // влево
-  [0, 1], // вправо
-] as const;
+import { DIRS_4, type ICell, Stack } from "../../shared";
 
 const isLand = (cell?: string) => cell === "1";
 const getUint8ArrayIndex = (r: number, c: number, cols: number) => r * cols + c;
@@ -22,15 +10,15 @@ export const numIslands = (grid: string[][]): number => {
 
   const visited = new Uint8Array(rows * cols);
 
-  const findIsland = (coord: ICoord) => {
-    const stack = new Stack<ICoord>();
+  const findIsland = (coord: ICell) => {
+    const stack = new Stack<ICell>();
     stack.push(coord);
     visited[getUint8ArrayIndex(coord.r, coord.c, cols)] = 1;
 
     while (!stack.isEmpty()) {
       const currentCoord = stack.pop();
 
-      for (const [dr, dc] of DIRS) {
+      for (const [dr, dc] of DIRS_4) {
         const nr = currentCoord.r + dr;
         const nc = currentCoord.c + dc;
         const visitedNeighborIndex = getUint8ArrayIndex(nr, nc, cols);
