@@ -36,7 +36,7 @@ export type DataStructure =
   | "binary-search-tree";
 
 /** Утилиты из `shared/`, которые решение реально импортит. */
-export type SharedUtil = "stack" | "queue" | "is-int32" | "math-reverse-integer";
+export type SharedUtil = "stack" | "queue" | "grid" | "is-int32" | "math-reverse-integer";
 
 export interface ProblemMeta {
   /** Номер задачи на LeetCode. */
