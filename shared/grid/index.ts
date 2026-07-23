@@ -3,7 +3,7 @@ export interface ICell {
   c: number;
 }
 
-// biome-ignore format: направления — держим крестом для наглядности
+// biome-ignore format: матрица направлений— держим крестом для наглядности
 export const DIRS_4 = [
            [-1, 0],
   [0, -1], /**X**/  [0, 1],
