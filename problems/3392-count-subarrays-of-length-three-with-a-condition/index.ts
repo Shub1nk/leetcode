@@ -1,4 +1,4 @@
-export function countSubarrays(nums: number[]): number {
+export const countSubarrays = (nums: number[]): number => {
   let count = 0;
 
   for (let i = 1; i < nums.length - 1; i++) {
@@ -8,4 +8,4 @@ export function countSubarrays(nums: number[]): number {
   }
 
   return count;
-}
+};

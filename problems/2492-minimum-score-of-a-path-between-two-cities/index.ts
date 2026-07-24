@@ -2,7 +2,7 @@ import { Stack } from "../../shared";
 
 import type { ILinkedCities, TRoad } from "./models";
 
-export function minimumScoreOfAPathBetweenTwoCities(_n: number, roads: Array<TRoad>): number {
+export const minimumScoreOfAPathBetweenTwoCities = (_n: number, roads: Array<TRoad>): number => {
   const visited = new Set<number>();
   const stack = new Stack<number>();
 
@@ -49,4 +49,4 @@ export function minimumScoreOfAPathBetweenTwoCities(_n: number, roads: Array<TRo
   }
 
   return minRoad;
-}
+};
