@@ -22,12 +22,15 @@ export type Technique =
   | "adjacency-list"
   | "connected-components"
   | "generator"
-  | "recursion";
+  | "recursion"
+  | "sliding-window"
+  | "two-pointers";
 
 /** Структуры данных, задействованные в решении. */
 export type DataStructure =
   | "array"
   | "map"
+  | "set"
   | "stack"
   | "queue"
   | "graph"
