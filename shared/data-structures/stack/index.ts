@@ -9,6 +9,18 @@ class StackUnderflowError extends Error {
   }
 }
 
+/**
+ * LIFO-стек: последний добавленный элемент выходит первым.
+ *
+ * Тонкая обёртка над {@link Deque}, работающая только с хвостом. Снятие/просмотр
+ * на пустом стеке бросают {@link StackUnderflowError} ({@link STACK_ERROR_EMPTY}).
+ *
+ * @example
+ * const st = new Stack<number>();
+ * st.push(1);
+ * st.push(2);
+ * st.pop(); // 2
+ */
 export class Stack<T> {
   private deque = new Deque<T>();
 
@@ -18,15 +30,18 @@ export class Stack<T> {
     }
   }
 
+  /** Кладёт элемент на вершину. */
   push(item: T) {
     this.deque.pushBack(item);
   }
 
+  /** Снимает вершину; бросает исключение, если стек пуст. */
   pop() {
     this.assertNotEmpty();
     return this.deque.popBack()!;
   }
 
+  /** Вершина без снятия; бросает искючение, если стек пуст. */
   peek() {
     this.assertNotEmpty();
     return this.deque.peekBack()!;
