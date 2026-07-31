@@ -9,7 +9,5 @@ export const meta: ProblemMeta = {
   status: "todo",
   solvedAt: "__DATE__",
   topics: [],
-  techniques: [],
-  dataStructures: [],
-  usesShared: [],
+  approaches: [],
 };

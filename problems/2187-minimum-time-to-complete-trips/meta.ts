@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-06-24",
   topics: ["array", "math", "binary-search"],
-  techniques: ["binary-search"],
-  dataStructures: [],
-  usesShared: [],
+  approaches: [
+    {
+      name: "binary-search",
+      techniques: ["binary-search"],
+      dataStructures: [],
+      usesShared: [],
+    },
+  ],
 };

@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-03",
   topics: ["tree", "binary-search-tree"],
-  techniques: ["recursion"],
-  dataStructures: ["tree", "binary-search-tree"],
-  usesShared: [],
+  approaches: [
+    {
+      name: "recursion",
+      techniques: ["recursion"],
+      dataStructures: ["tree", "binary-search-tree"],
+      usesShared: [],
+    },
+  ],
 };

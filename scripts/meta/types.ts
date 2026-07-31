@@ -6,11 +6,14 @@
  * Словари (`Technique` / `DataStructure` / `SharedUtil`) — контролируемые:
  * любой новый тег добавляется сюда осознанно, опечатка падает при сборке.
  * Конвенция значений — lowercase-kebab.
+ *
+ * Одну задачу можно решить разными способами, поэтому теги решения живут не
+ * плоско, а в `approaches[]` — по элементу на подход (см. `Approach`).
  */
 
 export type Difficulty = "easy" | "medium" | "hard";
 
-/** Алгоритм/приём, который реально использует решение. По нему строятся срезы. */
+/** Алгоритм/приём, который реально использует подход. По нему строятся срезы. */
 export type Technique =
   | "math"
   | "hash-map"
@@ -24,9 +27,12 @@ export type Technique =
   | "generator"
   | "recursion"
   | "sliding-window"
-  | "two-pointers";
+  | "two-pointers"
+  | "kruskal"
+  | "prim"
+  | "minimum-spanning-tree";
 
-/** Структуры данных, задействованные в решении. */
+/** Структуры данных, задействованные в подходе. */
 export type DataStructure =
   | "array"
   | "map"
@@ -36,10 +42,35 @@ export type DataStructure =
   | "graph"
   | "linked-list"
   | "tree"
-  | "binary-search-tree";
+  | "binary-search-tree"
+  | "union-find";
 
-/** Утилиты из `shared/`, которые решение реально импортит. */
-export type SharedUtil = "stack" | "queue" | "grid" | "is-int32" | "math-reverse-integer";
+/** Утилиты из `shared/`, которые подход реально импортит. */
+export type SharedUtil =
+  | "stack"
+  | "queue"
+  | "deque"
+  | "grid"
+  | "union-find"
+  | "is-int32"
+  | "math-reverse-integer";
+
+/**
+ * Один подход к решению задачи. Первый элемент `approaches` — основной
+ * (канонический) подход.
+ */
+export interface Approach {
+  /** Короткое имя подхода-алгоритма, lowercase-kebab: "kruskal", "prim", "dfs". */
+  name: string;
+  /** Файл решения, когда подходов несколько ("kruskal.ts"). Опускается для одиночного index.ts. */
+  file?: string;
+  /** Алгоритмы/приёмы этого подхода. */
+  techniques: Technique[];
+  /** Структуры данных этого подхода. */
+  dataStructures: DataStructure[];
+  /** Утилиты из `shared/`, которые импортит этот подход. */
+  usesShared: SharedUtil[];
+}
 
 export interface ProblemMeta {
   /** Номер задачи на LeetCode. */
@@ -58,10 +89,6 @@ export interface ProblemMeta {
   solvedAt: string;
   /** Официальные теги LeetCode (свободные строки, lowercase-kebab). */
   topics: string[];
-  /** Алгоритмы/приёмы, использованные в решении. */
-  techniques: Technique[];
-  /** Структуры данных, задействованные в решении. */
-  dataStructures: DataStructure[];
-  /** Какие утилиты из `shared/` уже подключены. Пусто = ещё на «сыром» коде. */
-  usesShared: SharedUtil[];
+  /** Подходы к решению. Первый — основной. У нерешённых (todo) — пустой массив. */
+  approaches: Approach[];
 }

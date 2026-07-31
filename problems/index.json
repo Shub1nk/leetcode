@@ -7,10 +7,22 @@
     "url": "https://leetcode.com/problems/two-sum/",
     "status": "solved",
     "solvedAt": "2026-06-11",
-    "topics": ["array", "hash-table"],
-    "techniques": ["hash-map"],
-    "dataStructures": ["map"],
-    "usesShared": []
+    "topics": [
+      "array",
+      "hash-table"
+    ],
+    "approaches": [
+      {
+        "name": "hash-map",
+        "techniques": [
+          "hash-map"
+        ],
+        "dataStructures": [
+          "map"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 3,
@@ -20,10 +32,24 @@
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "status": "solved",
     "solvedAt": "2026-07-24",
-    "topics": ["hash-table", "string", "sliding-window"],
-    "techniques": ["sliding-window", "two-pointers"],
-    "dataStructures": ["set"],
-    "usesShared": []
+    "topics": [
+      "hash-table",
+      "string",
+      "sliding-window"
+    ],
+    "approaches": [
+      {
+        "name": "sliding-window",
+        "techniques": [
+          "sliding-window",
+          "two-pointers"
+        ],
+        "dataStructures": [
+          "set"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 7,
@@ -33,10 +59,22 @@
     "url": "https://leetcode.com/problems/reverse-integer/",
     "status": "solved",
     "solvedAt": "2026-06-16",
-    "topics": ["math"],
-    "techniques": ["math"],
-    "dataStructures": [],
-    "usesShared": ["is-int32", "math-reverse-integer"]
+    "topics": [
+      "math"
+    ],
+    "approaches": [
+      {
+        "name": "math",
+        "techniques": [
+          "math"
+        ],
+        "dataStructures": [],
+        "usesShared": [
+          "is-int32",
+          "math-reverse-integer"
+        ]
+      }
+    ]
   },
   {
     "id": 9,
@@ -46,10 +84,19 @@
     "url": "https://leetcode.com/problems/palindrome-number/",
     "status": "solved",
     "solvedAt": "2026-06-11",
-    "topics": ["math"],
-    "techniques": ["math"],
-    "dataStructures": [],
-    "usesShared": []
+    "topics": [
+      "math"
+    ],
+    "approaches": [
+      {
+        "name": "math",
+        "techniques": [
+          "math"
+        ],
+        "dataStructures": [],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 12,
@@ -59,10 +106,23 @@
     "url": "https://leetcode.com/problems/integer-to-roman/",
     "status": "solved",
     "solvedAt": "2026-06-23",
-    "topics": ["math", "string", "hash-table"],
-    "techniques": ["greedy"],
-    "dataStructures": ["array"],
-    "usesShared": []
+    "topics": [
+      "math",
+      "string",
+      "hash-table"
+    ],
+    "approaches": [
+      {
+        "name": "greedy",
+        "techniques": [
+          "greedy"
+        ],
+        "dataStructures": [
+          "array"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 13,
@@ -72,10 +132,23 @@
     "url": "https://leetcode.com/problems/roman-to-integer/",
     "status": "solved",
     "solvedAt": "2026-06-23",
-    "topics": ["math", "string", "hash-table"],
-    "techniques": ["hash-map"],
-    "dataStructures": ["map"],
-    "usesShared": []
+    "topics": [
+      "math",
+      "string",
+      "hash-table"
+    ],
+    "approaches": [
+      {
+        "name": "hash-map",
+        "techniques": [
+          "hash-map"
+        ],
+        "dataStructures": [
+          "map"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 78,
@@ -85,10 +158,22 @@
     "url": "https://leetcode.com/problems/subsets/",
     "status": "solved",
     "solvedAt": "2026-07-20",
-    "topics": ["array", "backtracking", "bit-manipulation"],
-    "techniques": ["backtracking", "dfs"],
-    "dataStructures": [],
-    "usesShared": []
+    "topics": [
+      "array",
+      "backtracking",
+      "bit-manipulation"
+    ],
+    "approaches": [
+      {
+        "name": "backtracking",
+        "techniques": [
+          "backtracking",
+          "dfs"
+        ],
+        "dataStructures": [],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 102,
@@ -98,10 +183,26 @@
     "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
     "status": "solved",
     "solvedAt": "2026-07-23",
-    "topics": ["tree", "breadth-first-search", "binary-tree"],
-    "techniques": ["bfs"],
-    "dataStructures": ["tree", "queue"],
-    "usesShared": ["queue"]
+    "topics": [
+      "tree",
+      "breadth-first-search",
+      "binary-tree"
+    ],
+    "approaches": [
+      {
+        "name": "bfs",
+        "techniques": [
+          "bfs"
+        ],
+        "dataStructures": [
+          "tree",
+          "queue"
+        ],
+        "usesShared": [
+          "queue"
+        ]
+      }
+    ]
   },
   {
     "id": 104,
@@ -111,10 +212,25 @@
     "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
     "status": "solved",
     "solvedAt": "2026-07-16",
-    "topics": ["tree", "depth-first-search", "breadth-first-search", "binary-tree"],
-    "techniques": ["dfs", "recursion"],
-    "dataStructures": ["tree"],
-    "usesShared": []
+    "topics": [
+      "tree",
+      "depth-first-search",
+      "breadth-first-search",
+      "binary-tree"
+    ],
+    "approaches": [
+      {
+        "name": "dfs",
+        "techniques": [
+          "dfs",
+          "recursion"
+        ],
+        "dataStructures": [
+          "tree"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 146,
@@ -124,10 +240,25 @@
     "url": "https://leetcode.com/problems/lru-cache/",
     "status": "solved",
     "solvedAt": "2026-07-01",
-    "topics": ["hash-table", "linked-list", "design", "doubly-linked-list"],
-    "techniques": ["hash-map"],
-    "dataStructures": ["map", "linked-list"],
-    "usesShared": []
+    "topics": [
+      "hash-table",
+      "linked-list",
+      "design",
+      "doubly-linked-list"
+    ],
+    "approaches": [
+      {
+        "name": "hash-map",
+        "techniques": [
+          "hash-map"
+        ],
+        "dataStructures": [
+          "map",
+          "linked-list"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 200,
@@ -137,10 +268,31 @@
     "url": "https://leetcode.com/problems/number-of-islands/",
     "status": "solved",
     "solvedAt": "2026-07-16",
-    "topics": ["array", "depth-first-search", "breadth-first-search", "union-find", "matrix"],
-    "techniques": ["dfs", "connected-components"],
-    "dataStructures": ["array", "stack", "graph"],
-    "usesShared": ["stack", "grid"]
+    "topics": [
+      "array",
+      "depth-first-search",
+      "breadth-first-search",
+      "union-find",
+      "matrix"
+    ],
+    "approaches": [
+      {
+        "name": "dfs",
+        "techniques": [
+          "dfs",
+          "connected-components"
+        ],
+        "dataStructures": [
+          "array",
+          "stack",
+          "graph"
+        ],
+        "usesShared": [
+          "stack",
+          "grid"
+        ]
+      }
+    ]
   },
   {
     "id": 701,
@@ -150,10 +302,23 @@
     "url": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
     "status": "solved",
     "solvedAt": "2026-07-03",
-    "topics": ["tree", "binary-search-tree"],
-    "techniques": ["recursion"],
-    "dataStructures": ["tree", "binary-search-tree"],
-    "usesShared": []
+    "topics": [
+      "tree",
+      "binary-search-tree"
+    ],
+    "approaches": [
+      {
+        "name": "recursion",
+        "techniques": [
+          "recursion"
+        ],
+        "dataStructures": [
+          "tree",
+          "binary-search-tree"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 994,
@@ -163,10 +328,26 @@
     "url": "https://leetcode.com/problems/rotting-oranges/",
     "status": "solved",
     "solvedAt": "2026-07-23",
-    "topics": ["array", "breadth-first-search", "matrix"],
-    "techniques": ["bfs"],
-    "dataStructures": ["array", "queue"],
-    "usesShared": ["queue"]
+    "topics": [
+      "array",
+      "breadth-first-search",
+      "matrix"
+    ],
+    "approaches": [
+      {
+        "name": "bfs",
+        "techniques": [
+          "bfs"
+        ],
+        "dataStructures": [
+          "array",
+          "queue"
+        ],
+        "usesShared": [
+          "queue"
+        ]
+      }
+    ]
   },
   {
     "id": 1091,
@@ -176,10 +357,59 @@
     "url": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
     "status": "solved",
     "solvedAt": "2026-07-23",
-    "topics": ["array", "breadth-first-search", "matrix"],
-    "techniques": ["bfs"],
-    "dataStructures": ["array", "queue"],
-    "usesShared": ["queue", "grid"]
+    "topics": [
+      "array",
+      "breadth-first-search",
+      "matrix"
+    ],
+    "approaches": [
+      {
+        "name": "bfs",
+        "techniques": [
+          "bfs"
+        ],
+        "dataStructures": [
+          "array",
+          "queue"
+        ],
+        "usesShared": [
+          "queue",
+          "grid"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1584,
+    "slug": "min-cost-to-connect-all-points",
+    "title": "Min Cost to Connect All Points",
+    "difficulty": "medium",
+    "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "status": "solved",
+    "solvedAt": "2026-07-31",
+    "topics": [
+      "array",
+      "union-find",
+      "graph",
+      "minimum-spanning-tree"
+    ],
+    "approaches": [
+      {
+        "name": "kruskal",
+        "techniques": [
+          "kruskal",
+          "minimum-spanning-tree"
+        ],
+        "dataStructures": [
+          "array",
+          "graph",
+          "union-find"
+        ],
+        "usesShared": [
+          "union-find"
+        ]
+      }
+    ]
   },
   {
     "id": 2187,
@@ -189,10 +419,21 @@
     "url": "https://leetcode.com/problems/minimum-time-to-complete-trips/",
     "status": "solved",
     "solvedAt": "2026-06-24",
-    "topics": ["array", "math", "binary-search"],
-    "techniques": ["binary-search"],
-    "dataStructures": [],
-    "usesShared": []
+    "topics": [
+      "array",
+      "math",
+      "binary-search"
+    ],
+    "approaches": [
+      {
+        "name": "binary-search",
+        "techniques": [
+          "binary-search"
+        ],
+        "dataStructures": [],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 2492,
@@ -202,10 +443,28 @@
     "url": "https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/",
     "status": "solved",
     "solvedAt": "2026-06-26",
-    "topics": ["graph", "union-find", "depth-first-search", "breadth-first-search"],
-    "techniques": ["dfs", "adjacency-list", "connected-components"],
-    "dataStructures": ["stack", "map", "graph"],
-    "usesShared": []
+    "topics": [
+      "graph",
+      "union-find",
+      "depth-first-search",
+      "breadth-first-search"
+    ],
+    "approaches": [
+      {
+        "name": "dfs",
+        "techniques": [
+          "dfs",
+          "adjacency-list",
+          "connected-components"
+        ],
+        "dataStructures": [
+          "stack",
+          "map",
+          "graph"
+        ],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 2648,
@@ -215,10 +474,21 @@
     "url": "https://leetcode.com/problems/generate-fibonacci-sequence/",
     "status": "solved",
     "solvedAt": "2026-06-25",
-    "topics": ["math", "simulation"],
-    "techniques": ["generator", "math"],
-    "dataStructures": [],
-    "usesShared": []
+    "topics": [
+      "math",
+      "simulation"
+    ],
+    "approaches": [
+      {
+        "name": "generator",
+        "techniques": [
+          "generator",
+          "math"
+        ],
+        "dataStructures": [],
+        "usesShared": []
+      }
+    ]
   },
   {
     "id": 3392,
@@ -228,9 +498,18 @@
     "url": "https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/",
     "status": "solved",
     "solvedAt": "2026-07-02",
-    "topics": ["array"],
-    "techniques": [],
-    "dataStructures": ["array"],
-    "usesShared": []
+    "topics": [
+      "array"
+    ],
+    "approaches": [
+      {
+        "name": "iteration",
+        "techniques": [],
+        "dataStructures": [
+          "array"
+        ],
+        "usesShared": []
+      }
+    ]
   }
 ]

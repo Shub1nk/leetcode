@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-06-11",
   topics: ["math"],
-  techniques: ["math"],
-  dataStructures: [],
-  usesShared: [],
+  approaches: [
+    {
+      name: "math",
+      techniques: ["math"],
+      dataStructures: [],
+      usesShared: [],
+    },
+  ],
 };

@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-06-26",
   topics: ["graph", "union-find", "depth-first-search", "breadth-first-search"],
-  techniques: ["dfs", "adjacency-list", "connected-components"],
-  dataStructures: ["stack", "map", "graph"],
-  usesShared: [],
+  approaches: [
+    {
+      name: "dfs",
+      techniques: ["dfs", "adjacency-list", "connected-components"],
+      dataStructures: ["stack", "map", "graph"],
+      usesShared: [],
+    },
+  ],
 };

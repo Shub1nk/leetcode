@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-23",
   topics: ["array", "breadth-first-search", "matrix"],
-  techniques: ["bfs"],
-  dataStructures: ["array", "queue"],
-  usesShared: ["queue", "grid"],
+  approaches: [
+    {
+      name: "bfs",
+      techniques: ["bfs"],
+      dataStructures: ["array", "queue"],
+      usesShared: ["queue", "grid"],
+    },
+  ],
 };

@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-06-11",
   topics: ["array", "hash-table"],
-  techniques: ["hash-map"],
-  dataStructures: ["map"],
-  usesShared: [],
+  approaches: [
+    {
+      name: "hash-map",
+      techniques: ["hash-map"],
+      dataStructures: ["map"],
+      usesShared: [],
+    },
+  ],
 };

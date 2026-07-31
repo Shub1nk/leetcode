@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-23",
   topics: ["tree", "breadth-first-search", "binary-tree"],
-  techniques: ["bfs"],
-  dataStructures: ["tree", "queue"],
-  usesShared: ["queue"],
+  approaches: [
+    {
+      name: "bfs",
+      techniques: ["bfs"],
+      dataStructures: ["tree", "queue"],
+      usesShared: ["queue"],
+    },
+  ],
 };

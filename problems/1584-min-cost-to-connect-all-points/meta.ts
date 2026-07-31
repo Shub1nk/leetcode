@@ -8,8 +8,13 @@ export const meta: ProblemMeta = {
   url: "https://leetcode.com/problems/min-cost-to-connect-all-points/",
   status: "solved",
   solvedAt: "2026-07-31",
-  topics: [],
-  techniques: [],
-  dataStructures: [],
-  usesShared: [],
+  topics: ["array", "union-find", "graph", "minimum-spanning-tree"],
+  approaches: [
+    {
+      name: "kruskal",
+      techniques: ["kruskal", "minimum-spanning-tree"],
+      dataStructures: ["array", "graph", "union-find"],
+      usesShared: ["union-find"],
+    },
+  ],
 };

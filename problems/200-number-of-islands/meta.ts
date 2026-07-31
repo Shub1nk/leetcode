@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-16",
   topics: ["array", "depth-first-search", "breadth-first-search", "union-find", "matrix"],
-  techniques: ["dfs", "connected-components"],
-  dataStructures: ["array", "stack", "graph"],
-  usesShared: ["stack", "grid"],
+  approaches: [
+    {
+      name: "dfs",
+      techniques: ["dfs", "connected-components"],
+      dataStructures: ["array", "stack", "graph"],
+      usesShared: ["stack", "grid"],
+    },
+  ],
 };

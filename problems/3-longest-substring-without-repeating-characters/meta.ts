@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-24",
   topics: ["hash-table", "string", "sliding-window"],
-  techniques: ["sliding-window", "two-pointers"],
-  dataStructures: ["set"],
-  usesShared: [],
+  approaches: [
+    {
+      name: "sliding-window",
+      techniques: ["sliding-window", "two-pointers"],
+      dataStructures: ["set"],
+      usesShared: [],
+    },
+  ],
 };

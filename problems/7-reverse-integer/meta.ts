@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-06-16",
   topics: ["math"],
-  techniques: ["math"],
-  dataStructures: [],
-  usesShared: ["is-int32", "math-reverse-integer"],
+  approaches: [
+    {
+      name: "math",
+      techniques: ["math"],
+      dataStructures: [],
+      usesShared: ["is-int32", "math-reverse-integer"],
+    },
+  ],
 };

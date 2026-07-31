@@ -9,7 +9,12 @@ export const meta: ProblemMeta = {
   status: "solved",
   solvedAt: "2026-07-20",
   topics: ["array", "backtracking", "bit-manipulation"],
-  techniques: ["backtracking", "dfs"],
-  dataStructures: [],
-  usesShared: [],
+  approaches: [
+    {
+      name: "backtracking",
+      techniques: ["backtracking", "dfs"],
+      dataStructures: [],
+      usesShared: [],
+    },
+  ],
 };
