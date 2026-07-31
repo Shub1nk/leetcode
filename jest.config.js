@@ -9,5 +9,8 @@ module.exports = {
     ...tsJestTransformCfg,
   },
   verbose: true,
+  // Только *.test.* / *.spec.* — иначе дефолтный паттерн `__tests__/**/*`
+  // подхватывает вспомогательные файлы (напр. cases.ts) как пустые сьюты.
+  testMatch: ["**/?(*.)+(spec|test).[jt]s?(x)"],
   testPathIgnorePatterns: ["/templates/", "/node_modules/"],
 };

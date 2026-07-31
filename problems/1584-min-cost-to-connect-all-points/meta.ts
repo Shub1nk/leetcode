@@ -12,9 +12,17 @@ export const meta: ProblemMeta = {
   approaches: [
     {
       name: "kruskal",
+      file: "kruskal.ts",
       techniques: ["kruskal", "minimum-spanning-tree"],
       dataStructures: ["array", "graph", "union-find"],
       usesShared: ["union-find"],
+    },
+    {
+      name: "prim",
+      file: "prim.ts",
+      techniques: ["prim", "minimum-spanning-tree"],
+      dataStructures: ["array", "graph"],
+      usesShared: [],
     },
   ],
 };

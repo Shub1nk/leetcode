@@ -396,6 +396,7 @@
     "approaches": [
       {
         "name": "kruskal",
+        "file": "kruskal.ts",
         "techniques": [
           "kruskal",
           "minimum-spanning-tree"
@@ -408,6 +409,19 @@
         "usesShared": [
           "union-find"
         ]
+      },
+      {
+        "name": "prim",
+        "file": "prim.ts",
+        "techniques": [
+          "prim",
+          "minimum-spanning-tree"
+        ],
+        "dataStructures": [
+          "array",
+          "graph"
+        ],
+        "usesShared": []
       }
     ]
   },
