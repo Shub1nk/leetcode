@@ -1,5 +1,5 @@
-import { minimumScoreOfAPathBetweenTwoCities } from ".";
-import { roads } from "./bif-mock";
+import { minimumScoreOfAPathBetweenTwoCities } from "..";
+import { roads } from "./big-mock";
 
 describe("minimumScoreOfAPathBetweenTwoCities", () => {
   it("должен вернуть минимальный маршрут между 2 любыми городами", () => {

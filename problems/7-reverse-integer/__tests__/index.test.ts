@@ -1,4 +1,4 @@
-import { reverseInteger } from ".";
+import { reverseInteger } from "..";
 
 describe("reverseInteger", () => {
   it("Разворот положительного числа: 123", () => {

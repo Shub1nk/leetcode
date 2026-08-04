@@ -1,4 +1,4 @@
-import { twoSum } from ".";
+import { twoSum } from "..";
 
 describe("twoSum", () => {
   it("пример 1: [2, 7, 11, 15], target = 9", () => {

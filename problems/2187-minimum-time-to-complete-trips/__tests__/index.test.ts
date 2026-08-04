@@ -1,4 +1,4 @@
-import { minimumTimeToCompleteTrips } from ".";
+import { minimumTimeToCompleteTrips } from "..";
 import { bigTimes } from "./big-mock";
 
 describe("minimumTimeToCompleteTrips", () => {

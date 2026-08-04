@@ -1,4 +1,4 @@
-import { shortestPathInBinaryMatrix } from ".";
+import { shortestPathInBinaryMatrix } from "..";
 
 describe("shortestPathInBinaryMatrix", () => {
   it("Одна клетка, свободна", () => {

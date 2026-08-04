@@ -1,5 +1,5 @@
-import { buildTree } from "../../lib/build-tree";
-import { maximumDepthOfBinaryTree } from ".";
+import { buildTree } from "../../../lib/build-tree";
+import { maximumDepthOfBinaryTree } from "..";
 
 describe("maximumDepthOfBinaryTree", () => {
   describe("пустое дерево", () => {

@@ -1,5 +1,5 @@
-import { buildTree } from "../../lib";
-import { binaryTreeLevelOrderTraversal } from ".";
+import { buildTree } from "../../../lib";
+import { binaryTreeLevelOrderTraversal } from "..";
 
 describe("binaryTreeLevelOrderTraversal", () => {
   it("должен обрабатывать канонический пример", () => {

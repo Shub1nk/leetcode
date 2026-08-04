@@ -1,4 +1,4 @@
-import type { TRoad } from "./models";
+import type { TRoad } from "../models";
 
 export const roads: TRoad[] = [
   [7, 11, 418],

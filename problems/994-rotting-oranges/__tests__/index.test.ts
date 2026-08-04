@@ -1,4 +1,4 @@
-import { rottingOranges } from ".";
+import { rottingOranges } from "..";
 
 describe("rottingOranges", () => {
   it("канонический", () => {

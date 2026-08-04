@@ -1,4 +1,4 @@
-import { numIslands } from ".";
+import { numIslands } from "..";
 
 describe("numberOfIslands", () => {
   describe("вырожденные случаи", () => {

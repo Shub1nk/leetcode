@@ -1,4 +1,4 @@
-import { integerToRoman } from ".";
+import { integerToRoman } from "..";
 
 describe("integerToRoman", () => {
   it("должен перевести целое число в римскую запись", () => {

@@ -1,4 +1,4 @@
-import { countSubarrays } from ".";
+import { countSubarrays } from "..";
 
 describe("countSubarrays", () => {
   it("пример 1: одно совпадение в середине", () => {

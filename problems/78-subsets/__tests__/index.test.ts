@@ -1,4 +1,4 @@
-import { subsets } from ".";
+import { subsets } from "..";
 
 const normalize = (list: number[][]) =>
   list

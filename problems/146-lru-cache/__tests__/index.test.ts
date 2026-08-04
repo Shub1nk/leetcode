@@ -1,4 +1,4 @@
-import { LRUCache } from ".";
+import { LRUCache } from "..";
 
 describe("lruCache", () => {
   let lruCache: LRUCache;

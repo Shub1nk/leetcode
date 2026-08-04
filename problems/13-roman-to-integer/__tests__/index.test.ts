@@ -1,4 +1,4 @@
-import { romanToInt } from ".";
+import { romanToInt } from "..";
 
 describe("romanToInt", () => {
   it("должен преобразовать в число", () => {

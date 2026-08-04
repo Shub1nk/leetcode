@@ -1,4 +1,4 @@
-import { generateFibonacciSequence } from ".";
+import { generateFibonacciSequence } from "..";
 
 describe("generateFibonacciSequence", () => {
   it("должен вернуть числа фибонначи", () => {

@@ -1,4 +1,4 @@
-import { lengthOfLongestSubstring } from ".";
+import { lengthOfLongestSubstring } from "..";
 
 describe("lengthOfLongestSubstring", () => {
   it("пример 1", () => {
