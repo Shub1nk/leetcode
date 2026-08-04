@@ -1,6 +1,6 @@
-const getSumTrips = (trips: number[]) => trips.reduce((a, b) => a + b, 0);
+import { getMid } from "../../shared";
 
-const getMid = (left: number, right: number) => left + Math.floor((right - left) / 2);
+const getSumTrips = (trips: number[]) => trips.reduce((a, b) => a + b, 0);
 
 export const minimumTimeToCompleteTrips = (time: number[], totalTrips: number): number => {
   let left = Math.min(...time);

@@ -52,6 +52,7 @@ export type SharedUtil =
   | "deque"
   | "grid"
   | "union-find"
+  | "get-mid"
   | "is-int32"
   | "math-reverse-integer";
 

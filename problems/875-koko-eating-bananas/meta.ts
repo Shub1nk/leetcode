@@ -1,14 +1,14 @@
 import type { ProblemMeta } from "../../scripts/meta/types";
 
 export const meta: ProblemMeta = {
-  id: 2187,
-  slug: "minimum-time-to-complete-trips",
-  title: "Minimum Time to Complete Trips",
+  id: 875,
+  slug: "koko-eating-bananas",
+  title: "Koko Eating Bananas",
   difficulty: "medium",
-  url: "https://leetcode.com/problems/minimum-time-to-complete-trips/",
+  url: "https://leetcode.com/problems/koko-eating-bananas/",
   status: "solved",
-  solvedAt: "2026-06-24",
-  topics: ["array", "math", "binary-search"],
+  solvedAt: "2026-08-04",
+  topics: ["array", "binary-search"],
   approaches: [
     {
       name: "binary-search",
