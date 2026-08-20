@@ -9,5 +9,13 @@ export const meta: ProblemMeta = {
   status: "todo",
   solvedAt: "__DATE__",
   topics: [],
-  approaches: [],
+  approaches: [
+    {
+      name: "__APPROACH_SLUG__",
+      file: "__APPROACH_SLUG__.ts",
+      techniques: [],
+      dataStructures: [],
+      usesShared: [],
+    },
+  ],
 };
