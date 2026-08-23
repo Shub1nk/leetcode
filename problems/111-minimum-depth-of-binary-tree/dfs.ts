@@ -11,7 +11,7 @@ export const minimumDepthOfBinaryTree = (root: TreeNode | null): number => {
     if (depth >= minDepth) return;
 
     if (isLeafNode(node)) {
-      // выше мы уже доказали что depth >= minDetph, и откинули эту ветку
+      // выше отсекли всё, где depth >= minDepth, значит здесь строго меньше
       minDepth = depth;
     }
 
