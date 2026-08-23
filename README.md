@@ -1,43 +1,66 @@
-# LeetCode Solutions
+# Решения LeetCode
 
-Collection of LeetCode problem solutions in TypeScript.
+Разборы задач LeetCode на TypeScript: решение, тесты и краткий разбор для каждой задачи.
 
-## Structure
+Одна задача может быть решена несколькими способами — тогда каждый подход лежит отдельным файлом и прогоняется по общему набору тестов.
+
+## Структура
 
 ```
 leetcode/
-├── problems/        # LeetCode problems
-│   └── {number}-{name}/
+├── problems/            # задачи
+│   ├── index.json       # сводный индекс тегов (собирается yarn build-meta)
+│   └── {номер}-{имя}/
+│       ├── __tests__/
+│       │   ├── cases.ts       # входные данные и ожидания
+│       │   └── index.test.ts  # describe.each по всем подходам
+│       ├── {подход}.ts        # по файлу на подход
+│       ├── index.ts           # реэкспорт подходов под их именами
+│       ├── meta.ts            # теги: приёмы, структуры данных, что взято из shared
+│       └── README.md          # условие, разбор, сложность
+├── shared/              # переиспользуемые структуры и хелперы
+│   └── {имя}/
+│       ├── __tests__/
 │       ├── index.ts
-│       ├── index.test.ts
 │       └── README.md
-├── shared/          # Reusable helpers
-│   └── {name}/
-│       ├── index.ts
-│       ├── index.test.ts
-│       └── README.md
-└── templates/       # Templates
+├── lib/                 # хелперы для тестов (TreeNode, buildTree)
+├── docs/                # заметки, см. ниже
+├── scripts/             # create-problem, build-meta-index
+└── templates/           # шаблон новой задачи
 ```
 
-## Commands
+## Команды
 
 ```bash
-npm install            # Install dependencies
-npm test               # Run tests (verbose)
-npm run format         # Format code (Biome)
-npm run create-problem # Scaffold a new problem from the template
+npm install            # установить зависимости
+npm test               # прогнать тесты
+npm run format         # форматирование (Biome)
+npm run create-problem # создать папку задачи по шаблону
+npm run build-meta     # пересобрать problems/index.json из всех meta.ts
 ```
 
-## Git hooks
+Скаффолду можно сразу передать имя первого подхода:
+
+```bash
+npm run create-problem "239. Sliding Window Maximum" --approach brute-force
+```
+
+Получится `brute-force.ts` с заготовкой решения, `index.ts` с реэкспортом, `__tests__/cases.ts` и тест, уже развёрнутый через `describe.each`.
+
+## Документы
+
+- [`docs/leetcode-snippets.md`](docs/leetcode-snippets.md) — минимальные версии структур из `shared/`, без импортов, для отправки решения на LeetCode
+
+## Git-хуки
 
 Husky-хуки настраиваются автоматически при `npm install`:
 
 - `pre-commit` — гоняет `npm test`, коммит не пройдёт при падающих тестах
 - `commit-msg` — проверяет сообщение через commitlint (Conventional Commits)
 
-## Commits
+## Коммиты
 
-Conventional Commits format:
+Формат — Conventional Commits:
 
 ```bash
 git commit -m "problem: add 9-palindrome-number"
@@ -45,4 +68,4 @@ git commit -m "shared: add math-reverse-integer"
 git commit -m "docs: update algorithm-template"
 ```
 
-Types: `problem`, `shared`, `docs`, `fix`, `refactor`, `chore`
+Типы: `problem`, `shared`, `docs`, `fix`, `refactor`, `chore`
