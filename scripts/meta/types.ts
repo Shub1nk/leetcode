@@ -28,6 +28,7 @@ export type Technique =
   | "recursion"
   | "sliding-window"
   | "monotonic-deque"
+  | "monotonic-stack"
   | "two-pointers"
   | "kruskal"
   | "prim"

@@ -41,7 +41,7 @@ export class Stack<T> {
     return this.deque.popBack()!;
   }
 
-  /** Вершина без снятия; бросает искючение, если стек пуст. */
+  /** Вершина без снятия; бросает исключение, если стек пуст. */
   peek() {
     this.assertNotEmpty();
     return this.deque.peekBack()!;
