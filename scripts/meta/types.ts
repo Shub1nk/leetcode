@@ -26,6 +26,8 @@ export type Technique =
   | "connected-components"
   | "generator"
   | "recursion"
+  | "dynamic-programming"
+  | "memoization"
   | "sliding-window"
   | "monotonic-deque"
   | "monotonic-stack"
@@ -95,8 +97,9 @@ export interface ProblemMeta {
   /** Официальные теги LeetCode (свободные строки, lowercase-kebab). */
   topics: string[];
   /**
-   * Подходы к решению. Первый — основной. Скаффолд кладёт сюда заготовку с
-   * именем и файлом подхода и пустыми тегами — теги дозаполняются по решении.
+   * Подходы к решению в историческом порядке (см. `Approach`). Скаффолд кладёт
+   * сюда заготовку с именем и файлом подхода и пустыми тегами — теги
+   * дозаполняются по решении.
    */
   approaches: Approach[];
 }
